@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hukman.lebihataukurang.MainActivity">
+
+    <TextView
+        android:id="@+id/aturanTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="Androidmu sedang memikirkan satu angka diantara 1 sampai dengan 100"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pernyataanTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aturanTextView"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Bisakah kamu menebaknya??"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/inputTebakanText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pernyataanTextView"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Tebakan mu ...."
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/tombolTebak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputTebakanText"
+        android:layout_centerHorizontal="true"
+        android:onClick="cekJawabanClicked"
+        android:text="Cek Jawabanmu" />
+
+    <Button
+        android:id="@+id/tombolAcakNomor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tombolTebak"
+        android:layout_centerHorizontal="true"
+        android:onClick="acakNomor"
+        android:text="Acak Kembali Nomor" />
+</android.widget.RelativeLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WhatsThe Weather</string>
+    <string name="enter_a_city">Enter a city ...</string>
+    <string name="background">Background</string>
+    <string name="find_a_weather">Find a Weather</string>
+    <string name="input_your_location">Input your location ...</string>
+</resources>
